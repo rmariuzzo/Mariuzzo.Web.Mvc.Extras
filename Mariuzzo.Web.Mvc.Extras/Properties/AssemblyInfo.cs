@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Mariuzzo.Web.Mvc.Extras")]
-[assembly: AssemblyDescription("Extra and maybe missing components for ASP.NET MVC.")]
+[assembly: AssemblyDescription("Extra missing components for ASP.NET MVC.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mariuzzo")]
 [assembly: AssemblyProduct("Mariuzzo.Web.Mvc.Extras")]
