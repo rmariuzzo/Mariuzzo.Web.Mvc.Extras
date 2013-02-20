@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>First release.</releaseNotes>
-    <copyright>Copyright © Rubens Mariuzzo 2013</copyright>
+    <copyright>Copyright Â© Rubens Mariuzzo 2013</copyright>
     <tags>asp.net mvc extra extras</tags>
   </metadata>
 </package>
