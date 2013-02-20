@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ASP.NET-MVC-Extras")]
+[assembly: AssemblyTitle("Mariuzzo.Web.Mvc.Extras")]
 [assembly: AssemblyDescription("Extra and maybe missing components for ASP.NET MVC.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mariuzzo")]
-[assembly: AssemblyProduct("ASP.NET-MVC-Extras")]
+[assembly: AssemblyProduct("Mariuzzo.Web.Mvc.Extras")]
 [assembly: AssemblyCopyright("Copyright © Rubens Mariuzzo 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
