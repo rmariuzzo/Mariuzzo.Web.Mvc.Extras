@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET-MVC-Extras", "ASP.NET-MVC-Extras\ASP.NET-MVC-Extras.csproj", "{0ABAACC7-76DC-49C6-B5B9-23767E3DC669}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mariuzzo.Web.Mvc.Extras", "ASP.NET-MVC-Extras\Mariuzzo.Web.Mvc.Extras.csproj", "{0ABAACC7-76DC-49C6-B5B9-23767E3DC669}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET-MVC-Extras-Test", "ASP.NET-MVC-Extras-Test\ASP.NET-MVC-Extras-Test.csproj", "{4A406BC8-5F90-49BD-A0B4-C02EDEBFDD51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mariuzzo.Web.Mvc.Extras.Test", "ASP.NET-MVC-Extras-Test\Mariuzzo.Web.Mvc.Extras.Test.csproj", "{4A406BC8-5F90-49BD-A0B4-C02EDEBFDD51}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F64AB65-AE1A-44F0-8264-75CC24016BED}"
 	ProjectSection(SolutionItems) = preProject
