@@ -10,7 +10,7 @@ namespace Mariuzzo.Web.Mvc.Extras
     /// <summary>
     /// The <code>ModelStateDictionaryExtensions</code> class provides extension methods to <code>System.Web.Mvc.ModelStateDictionary</code>.
     /// </summary>
-    public class ModelStateDictionaryExtensions
+    public static class ModelStateDictionaryExtensions
     {
         /// <summary>
         /// Indicates if the expression is a valid field for the current model.
