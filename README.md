@@ -1,3 +1,5 @@
+![Mariuzzo.Web.Mvc.Extras Logo](https://raw.github.com/rmariuzzo/Mariuzzo.Web.Mvc.Extras/master/icon.png)
+
 Mariuzzo.Web.Mvc.Extras
 =======================
 
