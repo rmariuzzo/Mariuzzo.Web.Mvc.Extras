@@ -1,7 +1,14 @@
 Mariuzzo.Web.Mvc.Extras
 =======================
 
-Extra and maybe missing components for ASP.NET MVC.
+Extra missing components for ASP.NET MVC.
+
+Installation
+------------
+
+To install [Mariuzzo.Web.Mvc.Extras](http://nuget.org/packages/Mariuzzo.Web.Mvc.Extras/), run the following command in the NuGet's [Package Manager Console](http://docs.nuget.org/docs/start-here/using-the-package-manager-console)
+
+	Install-Package Mariuzzo.Web.Mvc.Extras
 
 What is inside the Extras?
 --------------------------
