@@ -8,6 +8,7 @@
     <owners>$author$</owners>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/rmariuzzo/Mariuzzo.Web.Mvc.Extras</projectUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/20fee7efb359b82fd41be7461fe51cd2?s=32</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>First release.</releaseNotes>
