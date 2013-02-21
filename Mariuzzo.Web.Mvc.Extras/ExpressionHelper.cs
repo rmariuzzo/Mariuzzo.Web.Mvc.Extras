@@ -6,8 +6,17 @@ using System.Reflection;
 
 namespace Mariuzzo.Web.Mvc.Extras
 {
+    /// <summary>
+    /// The <code>ExpressionHelper</code> class.
+    /// </summary>
     public class ExpressionHelper
     {
+        /// <summary>
+        /// Return the text representation for an expression tree.
+        /// </summary>
+        /// <typeparam name="TModel"></typeparam>
+        /// <param name="expression"></param>
+        /// <returns></returns>
         public static string GetExpressionText<TModel>(Expression<Func<TModel, object>> expression)
         {
             var expr = (LambdaExpression)expression;
@@ -19,6 +28,11 @@ namespace Mariuzzo.Web.Mvc.Extras
             return System.Web.Mvc.ExpressionHelper.GetExpressionText(expr);
         }
 
+        /// <summary>
+        /// Return a list of properties for an expression tree.
+        /// </summary>
+        /// <param name="expression"></param>
+        /// <returns></returns>
         private static IEnumerable<PropertyInfo> GetProperties(Expression expression)
         {
             var memberExpression = expression as MemberExpression;
