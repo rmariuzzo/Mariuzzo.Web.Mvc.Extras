@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
 using System.Linq.Expressions;
+using System.Web.Mvc;
 
 namespace Mariuzzo.Web.Mvc.Extras
 {
@@ -50,6 +47,17 @@ namespace Mariuzzo.Web.Mvc.Extras
         public static void AddModelError<TModel>(this ModelStateDictionary modelState, Expression<Func<TModel, object>> expression, Exception exception)
         {
             modelState.AddModelError(ExpressionHelper.GetExpressionText(expression), exception);
+        }
+
+        /// <summary>
+        /// Remove the element that has the specified tree expression from the model-state dictionary.
+        /// </summary>
+        /// <typeparam name="TModel">The type of the model.</typeparam>
+        /// <param name="modelState">The model state.</param>
+        /// <param name="expression">The expression tree representing a property.</param>
+        public static bool Remove<TModel>(this ModelStateDictionary modelState, Expression<Func<TModel, object>> expression)
+        {
+            return modelState.Remove(ExpressionHelper.GetExpressionText(expression));
         }
     }
 }
