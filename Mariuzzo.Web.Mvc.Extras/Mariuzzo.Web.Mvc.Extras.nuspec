@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
@@ -11,6 +11,7 @@
     <iconUrl>https://gravatar.com/avatar/20fee7efb359b82fd41be7461fe51cd2?s=256</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
+    <summary>Extra missing components for ASP.NET MVC. Provides extensions methods for ModelStateDictionary and comes with an improved ExpressionHelper that helps.</summary>
     <releaseNotes>First release.</releaseNotes>
     <copyright>Copyright © Rubens Mariuzzo 2013</copyright>
     <tags>asp.net web mvc extra extras mariuzzo modelstate expression helper extensions</tags>

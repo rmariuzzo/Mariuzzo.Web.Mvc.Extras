@@ -50,6 +50,16 @@ namespace Mariuzzo.Web.Mvc.Extras
         }
 
         /// <summary>
+        /// Add an error not bound to any model's property.
+        /// </summary>
+        /// <param name="modelState">The model state.</param>
+        /// <param name="errorMessage">The error message to add.</param>
+        public static void AddError(this ModelStateDictionary modelState, String errorMessage)
+        {
+            modelState.AddModelError(String.Empty, errorMessage);
+        }
+
+        /// <summary>
         /// Remove the element that has the specified tree expression from the model-state dictionary.
         /// </summary>
         /// <typeparam name="TModel">The type of the model.</typeparam>
