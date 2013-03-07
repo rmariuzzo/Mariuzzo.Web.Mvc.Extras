@@ -7,15 +7,15 @@ using System.Reflection;
 namespace Mariuzzo.Web.Mvc.Extras
 {
     /// <summary>
-    /// The <code>ExpressionHelper</code> class.
+    /// The <code>ExpressionHelper</code> class provides helper methods to get the model name from an expression.
     /// </summary>
     public class ExpressionHelper
     {
         /// <summary>
-        /// Return the text representation for an expression tree.
+        /// Gets the model name from a lambda expression.
         /// </summary>
-        /// <typeparam name="TModel"></typeparam>
-        /// <param name="expression"></param>
+        /// <typeparam name="TModel">The model type.</typeparam>
+        /// <param name="expression">The expression.</param>
         /// <returns></returns>
         public static string GetExpressionText<TModel>(Expression<Func<TModel, object>> expression)
         {
@@ -29,10 +29,10 @@ namespace Mariuzzo.Web.Mvc.Extras
         }
 
         /// <summary>
-        /// Return a list of properties for an expression tree.
+        /// Return a list of properties for an expression.
         /// </summary>
-        /// <param name="expression"></param>
-        /// <returns></returns>
+        /// <param name="expression">The expression.</param>
+        /// <returns>A list of properties.</returns>
         private static IEnumerable<PropertyInfo> GetProperties(Expression expression)
         {
             var memberExpression = expression as MemberExpression;

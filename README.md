@@ -10,6 +10,15 @@ To install [Mariuzzo.Web.Mvc.Extras](http://nuget.org/packages/Mariuzzo.Web.Mvc.
 
 	Install-Package Mariuzzo.Web.Mvc.Extras
 
+Documentation
+=============
+
+ExpressionHelper
+----------------
+
+##### GetExpressionText
+
+
 What is inside the Extras?
 --------------------------
 

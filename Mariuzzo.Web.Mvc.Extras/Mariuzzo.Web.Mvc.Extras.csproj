@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mariuzzo.Extensions">
+      <HintPath>..\packages\Mariuzzo.Extensions.13.3.6.32877\lib\net40\Mariuzzo.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -47,6 +50,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumExtensions.cs" />
     <Compile Include="ExpressionHelper.cs" />
     <Compile Include="ModelStateDictionaryExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
