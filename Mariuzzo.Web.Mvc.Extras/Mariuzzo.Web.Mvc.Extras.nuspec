@@ -11,8 +11,9 @@
     <iconUrl>https://gravatar.com/avatar/20fee7efb359b82fd41be7461fe51cd2?s=256</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <summary>Extra missing components for ASP.NET MVC. Provides extensions methods for ModelStateDictionary and comes with an improved ExpressionHelper that helps.</summary>
-    <releaseNotes>First release.</releaseNotes>
+    <summary>Extra missing components for ASP.NET MVC. Provides extensions methods for ModelStateDictionary, comes with an improved ExpressionHelper that really helps, and also provides extension methods to enums to create SelectListItems.</summary>
+    <releaseNotes><![CDATA[Version 13.3.7.21192
+ - EnumExtensions added!]]></releaseNotes>
     <copyright>Copyright © Rubens Mariuzzo 2013</copyright>
     <tags>asp.net web mvc extra extras mariuzzo modelstate expression helper extensions</tags>
   </metadata>
