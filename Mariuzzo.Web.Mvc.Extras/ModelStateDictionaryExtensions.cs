@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Web.Mvc;
 
@@ -68,6 +69,26 @@ namespace Mariuzzo.Web.Mvc.Extras
         public static bool Remove<TModel>(this ModelStateDictionary modelState, Expression<Func<TModel, object>> expression)
         {
             return modelState.Remove(ExpressionHelper.GetExpressionText(expression));
+        }
+
+        /// <summary>
+        /// Remove any element that has as prefix the specified tree expression from the model-state dictionary.
+        /// </summary>
+        /// <typeparam name="TModel">The type of the model.</typeparam>
+        /// <param name="modelState">The model state.</param>
+        /// <param name="expression">The expression tree representing a property.</param>
+        /// <returns><code>true</code> if any elemente was removed from the ModelStateDictionary, otherwise <code>false</code>.</returns>
+        public static bool RemoveWithPrefix<TModel>(this ModelStateDictionary modelState, Expression<Func<TModel, object>> expression)
+        {
+            var anyRemoved = false;
+            foreach (var key in modelState.Keys.ToList())
+            {
+                if (key != null && key.Split('.')[0] == ExpressionHelper.GetExpressionText(expression))
+                {
+                    anyRemoved = modelState.Remove(key) || anyRemoved;
+                }
+            }
+            return anyRemoved;
         }
     }
 }
