@@ -8,7 +8,9 @@ Installation
 
 To install [Mariuzzo.Web.Mvc.Extras](http://nuget.org/packages/Mariuzzo.Web.Mvc.Extras/), run the following command in the NuGet's [Package Manager Console](http://docs.nuget.org/docs/start-here/using-the-package-manager-console)
 
-	Install-Package Mariuzzo.Web.Mvc.Extras
+```shell
+Install-Package Mariuzzo.Web.Mvc.Extras
+```
 
 Documentation
 =============
@@ -17,7 +19,6 @@ ExpressionHelper
 ----------------
 
 ##### GetExpressionText
-
 
 What is inside the Extras?
 --------------------------
@@ -40,9 +41,11 @@ The [`System.Web.Mvc.ExpressionHelper#GetExpressionText`](http://msdn.microsoft.
 
 If you have the following `Foo` class:
 
-    class Foo {
-        public int? Id { get; set; }
-    }
+```csharp
+class Foo {
+	public int? Id { get; set; }
+}
+```
 
 And then run: `System.Web.Mvc.ExpressionHelper.GetExpressionText((Foo f) => f.Id)` you will receive an empty string instead of: `Id`. The same goes for any inner property that are [`Nullable`](http://msdn.microsoft.com/en-us/library/b3h38hb0.aspx).
 
@@ -63,10 +66,12 @@ On top of any of your Controllers just add: `using Mariuzzo.Web.Mvc.Extras;`.
 
 What would happen to the following code if you rename the property `Bar` of your model?
 
-	if (ModelState.IsValidField("Bar")
-	{
-		...
-	}
+```csharp
+if (ModelState.IsValidField("Bar")
+{
+	...
+}
+```
 
 If you forgot to also rename any of those _magic string_, I'm pretty sure you and your controllers will be in problem.
 
@@ -74,7 +79,9 @@ If you forgot to also rename any of those _magic string_, I'm pretty sure you an
 
 The [`Mariuzzo.Web.Mvc.Extras.ModelStateDictionaryExtensions`](https://github.com/rmariuzzo/Mariuzzo.Web.Mvc.Extras/blob/master/Mariuzzo.Web.Mvc.Extras/ModelStateDictionaryExtensions.cs) extend the legacy [ModelStateDictionary](http://msdn.microsoft.com/en-us/library/system.web.mvc.modelstatedictionary.aspx) and provides the same methods, but instead of _magic strings_ it accepts Lambda Expression.
 
-	if (ModelState.IsValidField((Foo f) => f.Bar))
-	{
-		...
-	}
+```csharp
+if (ModelState.IsValidField((Foo f) => f.Bar))
+{
+	...
+}
+```
